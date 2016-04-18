@@ -2,11 +2,12 @@
 
 const scales = {
   dark: require('./scales/dark'),
+  nick: require('./scales/nick'),
 }
 
 class Scale {
   constructor() {
-    this.defaultTheme = 'dark';
+    this.defaultTheme = 'nick';
   }
 
   currentTheme() {

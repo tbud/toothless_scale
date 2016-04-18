@@ -5,7 +5,7 @@ import {StyleSheet} from 'react-native';
 module.exports = {
   TView: StyleSheet.create({
     normal: {
-      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      backgroundColor: 'rgba(255, 255, 255, 1)',
     },
   }),
   TText: StyleSheet.create({
@@ -18,9 +18,14 @@ module.exports = {
   }),
   TButton: StyleSheet.create({
     buttonStyle: {
-      backgroundColor: 'red',
+      backgroundColor: '#ff8400',
     },
-    buttonText: {}
+    buttonDisable:{
+      backgroundColor: '#ddd',
+    },
+    buttonDanger: {
+      backgroundColor: '#ED3D3D',
+    }
   })
 };
 
