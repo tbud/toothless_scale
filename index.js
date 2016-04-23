@@ -35,4 +35,7 @@ class Scale {
   }
 }
 
-module.exports = new Scale();
+module.exports = {
+  Scale: new Scale(),
+  StyleSheet: require('./lib/StyleSheet'),
+};
