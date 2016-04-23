@@ -21,6 +21,15 @@ module.exports = {
       backgroundColor: 'red',
     },
     buttonText: {}
+  }),
+  TInput: StyleSheet.create({
+    inputStyle: {
+      borderBottomColor: 'red',
+      height: 36,
+      color:'rgba(255,255,255,1)',
+      borderColor: 'gray',
+      borderWidth: 1,
+    },
   })
 };
 
