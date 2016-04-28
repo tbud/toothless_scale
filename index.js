@@ -23,15 +23,15 @@ class Scale {
    * @param componentName
    * @returns {{}}
    */
-  getStyle(componentName:string) {
+  getStyle(componentName:string, styleName:string, defaultValue = {}) {
     let scale = scales[this.defaultTheme];
 
     if (scale) {
       let component = scale[componentName];
-      return component ? component : {};
+      return component[styleName] ? component[styleName] : defaultValue[styleName];
+    } else {
+      return defaultValue[styleName];
     }
-
-    return {};
   }
 }
 
