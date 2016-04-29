@@ -93,21 +93,64 @@ module.exports = {
   }),
 
   TInput: StyleSheet.create({
-    inputStyle: {
+    inputBox: {
       height: 40,
       borderColor: '#242424',
       borderWidth: 1,
-      marginTop: 8,
-      marginBottom: 8,
+      marginTop: 4,
+      marginBottom: 4,
       marginLeft: 12,
       marginRight: 12,
       borderRadius: 2,
-      color: '#949494',
       backgroundColor: '#242424',
+      borderStyle: 'solid',
+    },
+    inputText: {
+      height: 40,
+      color: '#949494',
+      fontSize: 14,
+      flex:1,
       paddingLeft: 8,
       paddingRight: 8,
+    },
+
+    inputBox_singleline: {
+      height: 40,
+      borderColor: '#000',
+      borderBottomWidth: 1,
+      borderTopWidth: 0,
+      borderLeftWidth: 0,
+      borderRightWidth: 0,
+      marginTop: 4,
+      marginBottom: 4,
+      marginLeft: 12,
+      marginRight: 12,
+      borderRadius: 0,
+      backgroundColor: '#000',
+      borderStyle: 'solid',
+    },
+    inputText_singleline: {
+      height: 40,
+      color: '#949494',
       fontSize: 14,
+      flex:1,
+    },
+
+    inputBox_disabled: {
+      borderColor: '#000',
+      backgroundColor: '#000',
+    },
+    inputText_disabled: {
+      color: '#666',
+    },
+
+    inputBox_error: {
+      borderColor: '#ff0040',
     }
+
+
+
+    //Todo add state style
   })
 };
 
